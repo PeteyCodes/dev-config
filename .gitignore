@@ -1,7 +1,7 @@
 # Exclude everything except for the desired config files
-./*
+*
 
 # Files to include in the repo:
-!./.vimrc
+!.vimrc
 
 
