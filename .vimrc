@@ -34,19 +34,16 @@ syntax on
 colorscheme wombat
 
 set smartindent
-set clipboard=unnamed " use os clipboard
-set shiftwidth=4 " number of spaces when shift indenting
-set tabstop=4 " number of visual spaces per tab
-set softtabstop=4 " number of spaces in tab when editing
-set expandtab " tab to spaces
-set number " show line numbers
-set cursorline  " highlight current line
-set showmatch " highlight matching [{()}]
-set incsearch " search as characters are entered
-set hlsearch " highlight matches
-let g:ctrlp_working_path_mode = 'r' " I copy and paste from other software a lot
-let g:ctrlp_show_hidden=1
-autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif " autoquit if only nerdtree is open
+set clipboard=unnamed   " use os clipboard
+set shiftwidth=4        " number of spaces when shift indenting
+set tabstop=4           " number of visual spaces per tab
+set softtabstop=4       " number of spaces in tab when editing
+set expandtab           " tab to spaces
+set number              " show line numbers
+set cursorline          " highlight current line
+set showmatch           " highlight matching [{()}]
+set incsearch           " search as characters are entered
+set hlsearch            " highlight matches
 set noswapfile
 
 " airline
@@ -64,9 +61,12 @@ let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 " CtrlP
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+let g:ctrlp_working_path_mode = 'r' " I copy and paste from other software a lot
+let g:ctrlp_show_hidden=1
 
 " YouCompleteMe
 let g:ycm_confirm_extra_conf = 0        " Don't ask about conf everytime we open a file
+
 
 "============================================================
 " Mappings
