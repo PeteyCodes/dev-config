@@ -14,6 +14,7 @@ call plug#begin('~/.vim/my-plugins')
 
 "== Plugins ==
 
+Plug 'vim-scripts/a.vim'
 Plug 'ctrlpvim/ctrlp.vim'
 Plug 'jeffreyiacono/vim-colors-wombat'
 Plug 'scrooloose/nerdtree'
@@ -21,6 +22,7 @@ Plug 'w0rp/ale'
 Plug 'vim-airline/vim-airline'
 Plug 'vim-airline/vim-airline-themes'
 Plug 'valloric/youcompleteme'
+Plug 'gilligan/vim-lldb'
 
 call plug#end()
 
@@ -29,6 +31,7 @@ call plug#end()
 " PeteyCodes settings
 "============================================================
 set guifont=Source\ Code\ Pro\ for\ Powerline:h14
+set guioptions=         " hide all scrollbars - they're ugly and useless
 
 syntax on
 colorscheme wombat
@@ -103,7 +106,7 @@ nnoremap <C-]> :ALENextWrap<CR>
 nnoremap <C-[> :ALEPreviousWrap<CR>
 
 " GoTo commands
-nnoremap <C-b> :YcmCompleter GoTo<CR>
+nnoremap <C-g> :YcmCompleter GoTo<CR>
 
 set noruler
 set noshowmode
